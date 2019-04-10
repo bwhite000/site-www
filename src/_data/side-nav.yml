@@ -121,71 +121,7 @@
             - title: Debugging Dart web apps [TBM]
               permalink: https://webdev.dartlang.org/guides/debugging
 
-- title: Tools & development
-  expanded: false
-  children:
-    - title: Editors & debuggers
-      children:
-        - title: DartPad (online)
-          permalink: https://dartpad.dartlang.org
-        - title: Dart DevTools [TBD]
-          permalink: TBD
-        - title: IntelliJ & Android Studio [TBD]
-          permalink: TBD
-        - title: VS Code [TBD]
-          permalink: TBD
-        - title: Other
-          urlExactMatch: true
-          match-page-url-exactly: true
-          permalink: /tools#ides-and-editors
-    - title: Command-line tools
-      children:
-        - title: Overview [TBD]
-          permalink: TBD
-        - title: build_runner
-          permalink: /tools/build_runner
-        - title: dartanalyzer [TBD]
-          permalink: TBD
-        - title: dartdoc [TBD]
-          permalink: TBD
-        - title: dartfmt [TBD]
-          permalink: TBD
-        - title: pub
-          permalink: /tools/pub
-        - title: Script/server
-          children:
-            - title: dart (Dart VM)
-              permalink: /server/tools/dart-vm
-        - title: Web
-          children:
-            - title: dart2js [TBM]
-              permalink: https://webdev.dartlang.org/tools/dart2js
-            - title: dartdevc [TBM]
-              permalink: https://webdev.dartlang.org/tools/dartdevc
-            - title: webdev [TBM]
-              permalink: https://webdev.dartlang.org/tools/webdev
-    - title: Maintaining code
-      children:
-        - title: Formatting [TBD]
-          permalink: TBD
-        - title: Static analysis
-          children:
-            - title: Overview
-              permalink: /tools/analyzer
-            - title: Customizing
-              permalink: /guides/language/analysis-options
-            - title: Fixing common type problems
-              permalink: /guides/language/sound-problems
-        - title: What not to commit
-          permalink: /guides/libraries/private-files
-    - title: Generating & testing code
-      children:
-        - title: Testing
-          permalink: /guides/testing
-        - title: Generating code [TBD]
-          permalink: TBD
-
-- title: Common concepts & patterns
+- title: Development
   expanded: false
   children:
     - title: Futures & async-await
@@ -194,19 +130,12 @@
       permalink: /guides/json
     - title: Streams
       permalink: /tutorials/language/streams
-    - title: Native extensions
-      permalink: 
-      children:
-        - title: Overview [TBD]
-          permalink: TBD
-        - title: Script/server (C?) [TBD]
-          permalink: TBD
-        - title: Web (JavaScript & TypeScript) [TBM]
-          permalink: https://webdev.dartlang.org/guides/web-programming#js-interop
-    - title: Script/server
+    - title: Command-line & server
       children:
         - title: Writing HTTP clients & servers
           permalink: /tutorials/server/httpserver
+        - title: Native extensions [TBD]
+          permalink: TBD
     - title: Web
       children:
         - title: Connecting Dart & HTML [TBM]
@@ -217,6 +146,70 @@
           permalink: https://webdev.dartlang.org/tutorials/low-level-html/remove-elements 
         - title: Fetching data dynamically [TBM]
           permalink: https://webdev.dartlang.org/tutorials/get-data/fetch-data
+        - title: Native extensions (TypeScript & JavaScript) [TBM]
+          permalink: https://webdev.dartlang.org/guides/web-programming#js-interop
+
+    - title: Tools & techniques
+      expanded: true
+      children:
+      - title: Editors & debuggers
+        children:
+          - title: DartPad (online)
+            permalink: https://dartpad.dartlang.org
+          - title: Dart DevTools [TBD]
+            permalink: TBD
+          - title: IntelliJ & Android Studio [TBD]
+            permalink: TBD
+          - title: VS Code [TBD]
+            permalink: TBD
+          - title: Other
+            urlExactMatch: true
+            match-page-url-exactly: true
+            permalink: /tools#ides-and-editors
+      - title: Command-line tools
+        children:
+          - title: Overview [TBD]
+            permalink: TBD
+          - title: build_runner
+            permalink: /tools/build_runner
+          - title: dartanalyzer [TBD]
+            permalink: TBD
+          - title: dartdoc [TBD]
+            permalink: TBD
+          - title: dartfmt [TBD]
+            permalink: TBD
+          - title: pub
+            permalink: /tools/pub
+          - title: Script/server
+            children:
+              - title: dart (Dart VM)
+                permalink: /server/tools/dart-vm
+          - title: Web
+            children:
+              - title: dart2js [TBM]
+                permalink: https://webdev.dartlang.org/tools/dart2js
+              - title: dartdevc [TBM]
+                permalink: https://webdev.dartlang.org/tools/dartdevc
+              - title: webdev [TBM]
+                permalink: https://webdev.dartlang.org/tools/webdev
+      - title: Formatting code [TBD]
+        permalink: TBD
+      - title: Static analysis
+        children:
+          - title: Overview
+            permalink: /tools/analyzer
+          - title: Customizing
+            permalink: /guides/language/analysis-options
+          - title: Fixing common type problems
+            permalink: /guides/language/sound-problems
+          - title: What not to commit
+            permalink: /guides/libraries/private-files
+      - title: Generating & testing code
+        children:
+          - title: Testing
+            permalink: /guides/testing
+          - title: Generating code [TBD]
+            permalink: TBD
 
 - title: Resources
   expanded: false
