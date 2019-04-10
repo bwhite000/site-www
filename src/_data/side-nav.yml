@@ -86,40 +86,8 @@
           permalink: /tools/pub/cmd/pub-uploader
         - title: Troubleshooting
           permalink: /tools/pub/troubleshoot
-    - title: Package site (pub.dev) [TBM]
+    - title: Package site
       permalink: https://pub.dartlang.org
-
-- title: Platforms & frameworks
-  expanded: false
-  children:
-    - title: Overview [TBD]
-      permalink: /guides/platforms
-    - title: Mobile (flutter.dev)
-      permalink: https://flutter.dev
-    - title: Script/server
-      children:
-        - title: Overview
-          urlExactMatch: true
-          match-page-url-exactly: true
-          permalink: /server
-        - title: Get started
-          permalink: /tutorials/server/get-started
-        - title: Development
-          expanded: true
-          children:
-            - title: AOT and JIT compilation [TBD]
-              permalink: TBD
-    - title: Web
-      children:
-        - title: Overview [TBD]
-          permalink: /web
-        - title: Get started [TBM]
-          permalink: https://webdev.dartlang.org/guides/get-started
-        - title: Development [TBD]
-          expanded: true
-          children:
-            - title: Debugging Dart web apps [TBM]
-              permalink: https://webdev.dartlang.org/guides/debugging
 
 - title: Development
   expanded: false
@@ -132,12 +100,20 @@
       permalink: /tutorials/language/streams
     - title: Command-line & server
       children:
+        - title: Get started
+          permalink: /tutorials/server/get-started
+        - title: Writing command-line apps
+          permalink: /tutorials/server/cmdline
         - title: Writing HTTP clients & servers
           permalink: /tutorials/server/httpserver
-        - title: Native extensions [TBD]
+        - title: Native extensions
+          permalink: /articles/server/native-extensions
+        - title: AOT and JIT compilation [TBD]
           permalink: TBD
     - title: Web
       children:
+        - title: Get started [TBM]
+          permalink: https://webdev.dartlang.org/guides/get-started
         - title: Connecting Dart & HTML [TBM]
           permalink: https://webdev.dartlang.org/tutorials/low-level-html/connect-dart-html
         - title: Adding elements to the DOM [TBM]
@@ -148,7 +124,6 @@
           permalink: https://webdev.dartlang.org/tutorials/get-data/fetch-data
         - title: Native extensions (TypeScript & JavaScript) [TBM]
           permalink: https://webdev.dartlang.org/guides/web-programming#js-interop
-
     - title: Tools & techniques
       expanded: true
       children:
@@ -204,12 +179,12 @@
             permalink: /guides/language/sound-problems
           - title: What not to commit
             permalink: /guides/libraries/private-files
-      - title: Generating & testing code
+      - title: Testing & optimization
         children:
           - title: Testing
             permalink: /guides/testing
-          - title: Generating code [TBD]
-            permalink: TBD
+          - title: Debugging web apps [TBM]
+            permalink: https://webdev.dartlang.org/guides/debugging
 
 - title: Resources
   expanded: false
