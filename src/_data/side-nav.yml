@@ -10,31 +10,27 @@
       match-page-url-exactly: true
       permalink: /tutorials
 
-- title: Language & core libraries
+- title: Language
   expanded: false
   children:
-    - title: Language tour
+    - title: Tour
       permalink: /guides/language/language-tour
     - title: Type system
       permalink: /guides/language/sound-dart
-    - title: Language specification
+    - title: Specification
       permalink: /guides/language/spec
     - title: Effective Dart
       permalink: /guides/language/effective-dart
-    - divider
-    - title: Overview of core libraries
+
+- title: Core libraries
+  expanded: false
+  children:
+    - title: Overview
       urlExactMatch: true
       match-page-url-exactly: true
       permalink: /guides/libraries
-    - title: Library tours
-      expanded: true
-      children:
-        - title: Common dart:* libraries
-          permalink: /guides/libraries/library-tour
-        - title: dart:html [TBM]
-          permalink: https://webdev.dartlang.org/guides/html-library-tour
-        - title: dart:io
-          permalink: /server/io-library-tour
+    - title: Tour
+      permalink: /guides/libraries/library-tour
 
 - title: Packages
   expanded: false
@@ -239,13 +235,13 @@
 - title: Related sites
   expanded: true
   children:
-    - title: Flutter (flutter.dev)
+    - title: Flutter
       permalink: https://flutter.dev
-    - title: API reference (api.dartlang.org)
+    - title: API reference
       permalink: https://api.dartlang.org
-    - title: Package site (pub.dartlang.org)
+    - title: Package site
       permalink: https://pub.dartlang.org
-    - title: Blog (medium.com/dartlang)
+    - title: Blog
       permalink: https://medium.com/dartlang
 
 # - title: Books
