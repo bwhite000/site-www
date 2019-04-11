@@ -98,34 +98,7 @@
       permalink: /guides/json
     - title: Streams
       permalink: /tutorials/language/streams
-    - title: Command-line & server
-      children:
-        - title: Get started
-          permalink: /tutorials/server/get-started
-        - title: Writing command-line apps
-          permalink: /tutorials/server/cmdline
-        - title: Writing HTTP clients & servers
-          permalink: /tutorials/server/httpserver
-        - title: Native extensions
-          permalink: /articles/server/native-extensions
-        - title: AOT and JIT compilation [TBD]
-          permalink: TBD
-    - title: Web
-      children:
-        - title: Get started [TBM]
-          permalink: https://webdev.dartlang.org/guides/get-started
-        - title: Connecting Dart & HTML [TBM]
-          permalink: https://webdev.dartlang.org/tutorials/low-level-html/connect-dart-html
-        - title: Adding elements to the DOM [TBM]
-          permalink: https://webdev.dartlang.org/tutorials/low-level-html/add-elements 
-        - title: Removing DOM elements [TBM]
-          permalink: https://webdev.dartlang.org/tutorials/low-level-html/remove-elements 
-        - title: Fetching data dynamically [TBM]
-          permalink: https://webdev.dartlang.org/tutorials/get-data/fetch-data
-        - title: Native extensions (TypeScript & JavaScript) [TBM]
-          permalink: https://webdev.dartlang.org/guides/web-programming#js-interop
     - title: Tools & techniques
-      expanded: true
       children:
       - title: Editors & debuggers
         children:
@@ -133,8 +106,8 @@
             permalink: https://dartpad.dartlang.org
           - title: Dart DevTools [TBD]
             permalink: TBD
-          - title: IntelliJ & Android Studio [TBD]
-            permalink: TBD
+          - title: IntelliJ & Android Studio
+            permalink: /tools/jetbrains-plugin
           - title: VS Code [TBD]
             permalink: TBD
           - title: Other
@@ -147,6 +120,8 @@
             permalink: TBD
           - title: build_runner
             permalink: /tools/build_runner
+          - title: dart
+            permalink: /server/tools/dart-vm
           - title: dartanalyzer [TBD]
             permalink: TBD
           - title: dartdoc [TBD]
@@ -185,6 +160,32 @@
             permalink: /guides/testing
           - title: Debugging web apps [TBM]
             permalink: https://webdev.dartlang.org/guides/debugging
+    - title: Command-line & server
+      children:
+        - title: Get started
+          permalink: /tutorials/server/get-started
+        - title: Writing command-line apps
+          permalink: /tutorials/server/cmdline
+        - title: Writing HTTP clients & servers
+          permalink: /tutorials/server/httpserver
+        - title: Native extensions
+          permalink: /articles/server/native-extensions
+        - title: AOT and JIT compilation [TBD]
+          permalink: TBD
+    - title: Web
+      children:
+        - title: Get started [TBM]
+          permalink: https://webdev.dartlang.org/guides/get-started
+        - title: Connec Dart & HTML [TBM]
+          permalink: https://webdev.dartlang.org/tutorials/low-level-html/connect-dart-html
+        - title: Add elements to the DOM [TBM]
+          permalink: https://webdev.dartlang.org/tutorials/low-level-html/add-elements 
+        - title: Remove DOM elements [TBM]
+          permalink: https://webdev.dartlang.org/tutorials/low-level-html/remove-elements 
+        - title: Fetch data dynamically [TBM]
+          permalink: https://webdev.dartlang.org/tutorials/get-data/fetch-data
+        - title: Native extensions (TypeScript & JavaScript) [TBM]
+          permalink: https://webdev.dartlang.org/guides/web-programming#js-interop
 
 - title: Resources
   expanded: false
