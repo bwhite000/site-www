@@ -154,6 +154,9 @@ pre, pre.prettyprint {
   border-radius: 0;
   font-size: 12px;
 
+  .com {
+    color: #6E6E70;
+  }
   .kwd {
     color: #BC0056;
   }
@@ -410,10 +413,32 @@ img {
 }
 // #footernav {}
 
+// The left and right sidebar is dynamically repositioned as the user scrolls,
+// to follow both the header's bottom and the banner's bottom position.
+//
+// On page load this repositioning happens with a delay, which causes a "flash"
+// as it finally happens. The below rulesmatch the expected initial positions
+// to minimize the "flash".
+@mixin sidenav-top-position() {
+  top: $site-header-height;
+
+  body.show_banner & {
+    top: $site-header-with-banner-height;
+  }
+
+  body.obsolete & {
+    top: $site-header-with-obsolete-height;
+  }
+
+  body.obsolete.show_banner & {
+    top: $site-header-with-banner-obsolete-height;
+  }
+}
+
 #sidenav {
+  @include sidenav-top-position;
   position: fixed;
   bottom: 0px;
-  top: $site-header-height;
   left: 0px;
   width: 230px;
   border-right: 1px solid #d8d8d8;
@@ -502,9 +527,10 @@ img {
 
 // The table-of-content section on the right side of the screen.
 #site-toc--side {
+  @include sidenav-top-position;
+
   position: fixed;
   bottom: 0px;
-  top: $site-header-height;
   width: 225px;
   right: 0px;
   overflow-x: hidden;
@@ -514,6 +540,7 @@ img {
   padding-right: 20px;
   // Override BS defaults for .nav, etc.
   .site-toc__title {
+    color: $site-color-body;
     font-size: 20px;
   }
   .toc-entry {
@@ -909,7 +936,7 @@ li.card {
       position: absolute;
       top: 0;
       right: $font-size-base / 4;
-      color: darken($bg-color, 25%);
+      color: $site-color-body;
     }
   }
 }
@@ -1076,7 +1103,9 @@ h3.popover-header {
 .table {
   width: 100%;
   @extend .table-striped;
-  @extend .table-bordered;
+
+  // override .table-striped macro, remove top border
+  td { border-top: none; }
 }
 
 .table-wrapper {
