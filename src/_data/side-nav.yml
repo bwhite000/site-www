@@ -50,15 +50,12 @@
           permalink: /tools/pub/dependencies
         - title: Glossary
           permalink: /tools/pub/glossary
+        - title: Package layout conventions
+          permalink: /tools/pub/package-layout
+        - title: Pubspec file
+          permalink: /tools/pub/pubspec
         - title: Versioning
           permalink: /tools/pub/versioning
-        - title: What's in a package
-          expanded: true
-          children:
-            - title: Layout conventions
-              permalink: /tools/pub/package-layout
-            - title: Pubspec file
-              permalink: /tools/pub/pubspec
     - title: The pub tool
       children:
         - title: Overview
