@@ -83,8 +83,6 @@
           permalink: /tools/pub/cmd/pub-uploader
         - title: Troubleshooting
           permalink: /tools/pub/troubleshoot
-    - title: Package site
-      permalink: https://pub.dartlang.org
 
 - title: Development
   expanded: false
@@ -99,8 +97,8 @@
       children:
       - title: Editors & debuggers
         children:
-          - title: DartPad (online)
-            permalink: https://dartpad.dartlang.org
+          - title: Overview [TBD]
+            permalink: TBD
           - title: Dart DevTools [TBD]
             permalink: TBD
           - title: IntelliJ & Android Studio
@@ -201,14 +199,16 @@
 - title: Related sites
   expanded: true
   children:
-    - title: Flutter
-      permalink: https://flutter.dev
     - title: API reference
       permalink: https://api.dartlang.org
-    - title: Package site
-      permalink: https://pub.dartlang.org
     - title: Blog
       permalink: https://medium.com/dartlang
+    - title: DartPad (online editor)
+      permalink: https://dartpad.dartlang.org
+    - title: Flutter
+      permalink: https://flutter.dev
+    - title: Package site
+      permalink: https://pub.dartlang.org
 
 # - title: Books
 #   permalink: /resources/books
